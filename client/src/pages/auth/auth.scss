@@ -1,0 +1,48 @@
+.auth {
+	width: 100%;
+	height: calc(100vh - 20px);
+	padding: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url("../../../public/img/bg.jpeg");
+	position: fixed;
+	left: 0;
+
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		border: 1px solid #ddd;
+		width: 300px;
+		border-radius: 8px;
+		background-color: white;
+		padding: 20px;
+
+		.inputGroup {
+			display: flex;
+			flex-direction: column;
+
+			label {
+				margin-bottom: 3px;
+				font-weight: 700;
+				color: #09236d;
+			}
+
+			input {
+				padding: 8px;
+				font-size: 16px;
+			}
+		}
+		button {
+			padding: 10px;
+			border: none;
+			background-color: #09236d;
+			color: white;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: 500;
+		}
+	}
+}

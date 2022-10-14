@@ -1,0 +1,134 @@
+@import "../../global.scss";
+.write {
+	width: 100%;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+
+	@include mobile {
+		padding: 50px 0;
+		background-color: white;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+		padding: 20px;
+
+		.title {
+			color: teal;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		form {
+			display: flex;
+			gap: 20px;
+			width: 100%;
+
+			@include mobile {
+				flex-direction: column;
+			}
+
+			.formLeft {
+				flex: 3;
+				width: 100%;
+
+				.inputGroup {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 10px;
+
+					label {
+						font-weight: 600;
+					}
+
+					input {
+						padding: 8px;
+					}
+				}
+			}
+
+			.formRight {
+				flex: 1;
+				width: 500px;
+				height: max-content;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				gap: 10px;
+
+				@include mobile {
+					flex-direction: row;
+				}
+
+				@include mobile600 {
+					flex-direction: column;
+				}
+
+				.top {
+					padding: 10px;
+					border: 1px solid #ddd;
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+
+					@include mobile {
+						justify-content: space-between;
+						flex: 1;
+					}
+
+					span {
+						font-size: 14px;
+						font-weight: 600;
+					}
+
+					.buttonDiv {
+						display: flex;
+						align-items: center;
+						gap: 10px;
+						justify-content: space-between;
+
+						.saveBtn {
+							border: 1px solid #09236d;
+							padding: 4px;
+							color: #09236d;
+							cursor: pointer;
+						}
+
+						.updateBtn {
+							border: none;
+							padding: 6px;
+							background-color: teal;
+							color: white;
+							cursor: pointer;
+						}
+					}
+				}
+				.bottom {
+					padding: 10px;
+					border: 1px solid #ddd;
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+
+					@include mobile {
+						flex: 1;
+					}
+
+					.radiogroup {
+						display: flex;
+						align-items: center;
+						font-size: 14px;
+						gap: 10px;
+
+						input {
+							font-size: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

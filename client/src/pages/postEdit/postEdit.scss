@@ -1,0 +1,20 @@
+.postEdit {
+	width: 100%;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+
+	.container {
+		form {
+			.formLeft {
+				display: flex;
+				flex-direction: column;
+
+				img {
+					width: 100%;
+					height: 400px;
+				}
+			}
+		}
+	}
+}

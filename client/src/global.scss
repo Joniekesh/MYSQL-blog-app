@@ -1,0 +1,28 @@
+$width968: 968px;
+$width890: 890px;
+$width: 768px;
+$width600: 600px;
+
+@mixin mobile968 {
+	@media (max-width: #{$width968}) {
+		@content;
+	}
+}
+
+@mixin mobile890 {
+	@media (max-width: #{$width890}) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: #{$width}) {
+		@content;
+	}
+}
+
+@mixin mobile600 {
+	@media (max-width: #{$width600}) {
+		@content;
+	}
+}

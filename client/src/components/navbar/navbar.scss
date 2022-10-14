@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+@import "../../global.scss";
+
+.navbar {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 100px;
+	background-color: #09236d;
+	color: white;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+
+	@include mobile968 {
+		padding: 16px;
+	}
+
+	.navbarLeft {
+		h1 {
+			font-family: "Sofia", cursive;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	}
+
+	.navbarRight {
+		ul {
+			list-style: none;
+			display: flex;
+			gap: 10px;
+			cursor: pointer;
+			font-size: 16px;
+			align-items: center;
+
+			@include mobile968 {
+				gap: 6px;
+			}
+
+			.hamburger {
+				@include mobile890 {
+					display: block;
+				}
+			}
+
+			.item {
+				font-weight: 300;
+				padding: 3px;
+
+				@include mobile890 {
+					display: none;
+				}
+
+				&:hover {
+					background-color: white;
+					color: #09236d;
+					border-radius: 4px;
+				}
+			}
+
+			.hamburger {
+				font-size: 26px;
+				display: none;
+
+				@include mobile890 {
+					display: flex;
+				}
+			}
+
+			.userInfo {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+			}
+		}
+	}
+}
